@@ -29,7 +29,7 @@ jobs:
               if (context.ref.startsWith("refs/tags/")) {
                 return context.ref.slice(10);
               }
-              if (context.ref === "refs/heads/main") {
+              if (context.ref === "refs/heads/master") {
                 return "latest";
               }
             }
